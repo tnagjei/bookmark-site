@@ -1,13 +1,71 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBeam - Bookmark Navigator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>NavBeam</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search your bookmarks...">
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-menu">
+            <li>
+                <span class="folder">Bookmarks</span>
+                <ul>
+                    <li>
+                        <span class="folder">Global Marketing Tools</span>
+                        <ul>
+                            <li><a href="https://www.similarweb.com/">Similarweb - Website Traffic Analysis</a></li>
+                            <li><a href="https://trends.google.com/trends/">Google Trends - Search Trends</a></li>
+                            <li><a href="https://www.appannie.com/">App Annie - App Data Analysis</a></li>
+                            <li><a href="https://www.semrush.com/">SEMrush - Keyword Research</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="folder">Social Media</span>
+                        <ul>
+                            <li><a href="https://www.facebook.com/">Facebook</a></li>
+                            <li><a href="https://www.instagram.com/">Instagram</a></li>
+                            <li><a href="https://www.youtube.com/">YouTube</a></li>
+                            <li><a href="https://www.tiktok.com/">TikTok</a></li>
+                            <li><a href="https://www.pinterest.com/">Pinterest</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="folder">Productivity Tools</span>
+                        <ul>
+                            <li><a href="https://www.notion.so/">Notion - Notes & Collaboration</a></li>
+                            <li><a href="https://trello.com/">Trello - Project Management</a></li>
+                            <li><a href="https://www.figma.com/">Figma - Design Collaboration</a></li>
+                            <li><a href="https://slack.com/">Slack - Team Communication</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="folder">AI Tools</span>
+                        <ul>
+                            <li><a href="https://chat.openai.com/">ChatGPT</a></li>
+                            <li><a href="https://www.midjourney.com/">Midjourney - AI Image Generation</a></li>
+                            <li><a href="https://www.copy.ai/">Copy.ai - AI Copywriting</a></li>
+                            <li><a href="https://www.jasper.ai/">Jasper - AI Content Creation</a></li>
+                            <li><a href="https://www.toolify.ai/">Toolify - AI Tools Ranking</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <footer>
+        <p>© 2023 NavBeam - Your Personal Bookmark Navigator</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
 </html>
